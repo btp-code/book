@@ -261,7 +261,7 @@ CSS 還可以透過 top, bottom, left, bottom 指定元素的位置。
 
 * max-width： 螢幕寬度上限，亦即只在螢幕寬度不超過指定的值時，`{}` 裡的 CSS 才會有效。
 * max-height： 螢幕高度上限，亦即只在螢幕高度不超過指定的值時，`{}` 裡的 CSS 才會有效。
-* min-width： 螢幕寬度上限，亦即只在螢幕寬度不少於指定的值時，`{}` 裡的 CSS 才會有效。
+* min-width： 螢幕寬度下限，亦即只在螢幕寬度不少於指定的值時，`{}` 裡的 CSS 才會有效。
 * min-height： 螢幕高度下限，亦即只在螢幕高度不少於指定的值時，`{}` 裡的 CSS 才會有效。
 
 例如在這個[例子](https://btp-code.github.io/btp-code/css/examples/media.html)中，使用了
