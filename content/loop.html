@@ -631,7 +631,44 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x8FF4;&#x5708;">&#x8FF4;&#x5708;</h1>
+                                <h1 id="&#x8FF4;&#x5708;">&#x8FF4;&#x5708;</h1><h2 id="while">While</h2><p><code>while</code> &#x80FD;&#x91CD;&#x8907;&#x57F7;&#x884C;&#x4E00;&#x6BB5;&#x7A0B;&#x5F0F;&#x78BC;&#xFF0C;&#x4E00;&#x6A23;&#x5148;&#x5F9E;&#x7C21;&#x55AE;&#x7BC4;&#x4F8B;&#x4ECB;&#x7D39;&#x3002;</p><pre><code class="lang-js"><span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>;
+<span class="hljs-keyword">while</span>(i &lt; <span class="hljs-number">10</span>){
+    <span class="hljs-built_in">console</span>.log(i);
+    i++;
+}</code></pre>
+<p>&#x5982;&#x679C;&#x7B26;&#x5408;<code>()</code>&#x5167;&#x689D;&#x4EF6;&#x5247;&#x57F7;&#x884C;<code>{}</code>&#x5167;&#x7684;&#x7A0B;&#x5F0F;&#x78BC;&#x3002;</p><h2 id="do-while">Do-while</h2><p><code>do</code> &#x8207;<code>while</code> &#x985E;&#x4F3C;&#xFF0C;&#x4E0D;&#x904E;<code>do</code> &#x6703;&#x5148;&#x57F7;&#x884C;&#x4E00;&#x6B21;&#x4E4B;&#x5F8C;&#x518D;&#x5224;&#x65B7;&#xFF0C;&#x5982;&#x679C;&#x7B26;&#x5408;&#x689D;&#x4EF6;&#x7684;&#x8A71;&#x518D;&#x91CD;&#x65B0;&#x57F7;&#x884C;&#x3002;</p><pre><code class="lang-js"><span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>;
+<span class="hljs-keyword">do</span>{
+    <span class="hljs-built_in">console</span>.log(i);
+    i++;
+}<span class="hljs-keyword">while</span>(i&lt;<span class="hljs-number">10</span>)</code></pre>
+<p>&#x5728;&#x9019;&#x88E1;&#x7D50;&#x679C;&#x6703;&#x4E00;&#x6A23;&#xFF0C;&#x4F46;&#x6BD4;&#x8F03;&#x4EE5;&#x4E0B;&#x5169;&#x7A2E;&#x7A0B;&#x5F0F;&#x78BC;&#x3002;</p><pre><code class="lang-js"><span class="hljs-keyword">let</span> i = <span class="hljs-number">10</span>;
+<span class="hljs-keyword">do</span>{
+    <span class="hljs-built_in">console</span>.log(i);
+    i++;
+}<span class="hljs-keyword">while</span>(i&lt;<span class="hljs-number">10</span>)</code></pre>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> i = <span class="hljs-number">10</span>;
+<span class="hljs-keyword">while</span>(i&lt;<span class="hljs-number">10</span>){
+    <span class="hljs-built_in">console</span>.log(i);
+    i++;
+}</code></pre>
+<p>&#x80FD;&#x770B;&#x5230;do-while&#x9084;&#x662F;&#x5370;&#x51FA;&#x4E86;10</p><h2 id="for">For</h2><p>&#x4E0A;&#x9762;&#x90A3;&#x6BB5;&#x7A0B;&#x5F0F;&#x4E5F;&#x53EF;&#x4EE5;&#x7528;&#x4EE5;&#x4E0B;&#x7A0B;&#x5F0F;&#x53D6;&#x4EE3;&#x3002;</p><pre><code class="lang-js"><span class="hljs-keyword">for</span>(i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">10</span>; i = i++){
+<span class="hljs-built_in">console</span>.log(i);
+}</code></pre>
+<p>&#x8207;&#x4E0B;&#x9762;&#x9019;&#x6BB5;&#x7A0B;&#x5F0F;&#x78BC;&#x5B8C;&#x5168;&#x76F8;&#x540C;&#x3002;</p><pre><code class="lang-js"><span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>;
+<span class="hljs-keyword">while</span>(i &lt; <span class="hljs-number">10</span>){
+    <span class="hljs-built_in">console</span>.log(i);
+    i++;
+}</code></pre>
+<p><code>for</code> &#x62EC;&#x865F;&#x5167;&#x7528;&#x5169;&#x500B;&#x5206;&#x865F;&#x5206;&#x6210;&#x4E09;&#x6BB5;&#xFF0C;&#x7B2C;&#x4E00;&#x6BB5;&#x662F;&#x7A0B;&#x5F0F;&#x57F7;&#x884C;&#x524D;&#x6703;&#x57F7;&#x884C;&#x7684;&#xFF0C;&#x7B2C;&#x4E8C;&#x6BB5;&#x662F;&#x689D;&#x4EF6;&#xFF0C;&#x7B2C;&#x4E09;&#x6BB5;&#x662F;&#x9019;&#x6BB5;&#x8FF4;&#x5708;&#x5F8C;&#x8DDF;&#x4E0B;&#x6B21;&#x8FF4;&#x5708;&#x958B;&#x59CB;&#x524D;&#x6703;&#x57F7;&#x884C;&#x7684;&#x7A0B;&#x5F0F;&#x78BC;&#xFF0C;&#x5927;&#x5BB6;&#x53EF;&#x4EE5;&#x8A66;&#x8A66;&#x770B;&#x4EE5;&#x4E0B;&#x9019;&#x6BB5;&#x7A0B;&#x5F0F;&#x78BC;&#xFF0C;&#x770B;&#x770B;&#x8207;&#x524D;&#x9762;&#x6709;&#x4EC0;&#x9EBC;&#x4E0D;&#x540C;&#x3002;</p><pre><code class="lang-js"><span class="hljs-keyword">for</span>(i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">10</span>; <span class="hljs-built_in">console</span>.log(i)){
+    i++;
+}</code></pre>
+<p><sup><a href="#fn_1" id="reffn_1">1</a></sup></p><h2 id="&#x8AB2;&#x5F8C;&#x7DF4;&#x7FD2;">&#x8AB2;&#x5F8C;&#x7DF4;&#x7FD2;</h2><p>&#x8ACB;&#x5927;&#x5BB6;&#x5229;&#x7528;&#x7B97;&#x51FA;2&#x7684;31&#x6B21;&#x65B9;&#x3002;<sup><a href="#fn_2" id="reffn_2">2</a></sup></p><blockquote id="fn_1">
+<sup>1</sup>. &#x9019;&#x88E1;&#x662F;&#x70BA;&#x4E86;&#x8B93;&#x5927;&#x5BB6;&#x4E86;&#x89E3;for-loop&#x505A;&#x7684;&#x89E3;&#x91CB;&#xFF0C;&#x9019;&#x662F;&#x975E;&#x5E38;&#x4E0D;&#x597D;&#x7684;&#x793A;&#x7BC4;&#xFF0C;&#x4F5C;&#x70BA;&#x7A0B;&#x5F0F;&#x521D;&#x5B78;&#x8005;&#xFF0C;&#x4F7F;&#x7528;&#x9019;&#x7A2E;&#x5BEB;&#x6CD5;&#x5BB9;&#x6613;&#x8B93;&#x81EA;&#x5DF1;&#x641E;&#x6DF7;&#xFF0C;&#x4E8B;&#x5BE6;&#x4E0A;&#xFF0C;&#x4F5C;&#x70BA;&#x7A0B;&#x5F0F;&#x8A2D;&#x8A08;&#x8005;&#x5E7E;&#x4E4E;&#x6C92;&#x6709;&#x4EFB;&#x4F55;&#x7406;&#x7531;&#x4E00;&#x9019;&#x7A2E;&#x65B9;&#x5F0F;&#x5BEB;&#x7A0B;&#x5F0F;&#xFF0C;&#x9019;&#x9664;&#x4E86;&#x8B93;&#x81EA;&#x5DF1;&#x66F4;&#x5BB9;&#x6613;&#x641E;&#x6DF7;&#x5916;&#x6C92;&#x6709;&#x4EFB;&#x4F55;&#x5F97;&#x597D;&#x8655;&#x3002;&#x6211;&#x5011;&#x5C07;&#x9019;&#x7A2E;&#x4E0D;&#x4F9D;&#x7167;&#x6163;&#x4F8B;&#x7684;&#x5BEB;&#x6CD5;&#x7A31;&#x70BA;&#x9ED1;&#x9B54;&#x6CD5;&#xFF0C;&#x96D6;&#x7136;&#x9069;&#x7576;&#x7684;&#x4F7F;&#x7528;&#x9ED1;&#x9B54;&#x6CD5;&#x53EF;&#x4EE5;&#x8B93;&#x7A0B;&#x5F0F;&#x78BC;&#x66F4;&quot;&#x77ED;&quot;&#xFF0C;&#x4F46;&#x662F;&#x5BB9;&#x6613;&#x628A;&#x81EA;&#x5DF1;&#x8207;&#x5225;&#x4EBA;&#x641E;&#x6DF7;&#x3002;<a href="#reffn_1" title="Jump back to footnote [1] in the text."> &#x21A9;</a>
+</blockquote>
+<blockquote id="fn_2">
+<sup>2</sup>. 2&#x7684;31&#x6B21;&#x65B9;&#x5728;&#x96FB;&#x8166;&#x7A0B;&#x5F0F;&#x88E1;&#x9762;&#x662F;&#x5F88;&#x91CD;&#x8981;&#x7684;&#xFF08;&#x4E8B;&#x5BE6;&#x4E0A;&#x662F;2^31 -1&#xFF09;&#x3002;<a href="#reffn_2" title="Jump back to footnote [2] in the text."> &#x21A9;</a>
+</blockquote>
+
                                 
                                 </section>
                             
@@ -674,7 +711,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"迴圈","level":"1.5.5","depth":2,"next":{"title":"函式","level":"1.5.6","depth":2,"path":"function.md","ref":"function.md","articles":[]},"previous":{"title":"條件判斷","level":"1.5.4","depth":2,"path":"if_else.md","ref":"if_else.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"src","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"loop.md","mtime":"2016-08-22T13:59:18.219Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-08-22T15:14:13.741Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"迴圈","level":"1.5.5","depth":2,"next":{"title":"函式","level":"1.5.6","depth":2,"path":"function.md","ref":"function.md","articles":[]},"previous":{"title":"條件判斷","level":"1.5.4","depth":2,"path":"if_else.md","ref":"if_else.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"src","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"loop.md","mtime":"2016-08-23T00:39:38.001Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-08-23T00:40:50.953Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
