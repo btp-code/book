@@ -101,6 +101,15 @@ var car = {
 }
 ```
 
+而取得物件屬性的方式也很簡單，像這樣
+
+```js
+car.speed;
+car['speed'];
+```
+
+兩個方式都是一樣的，都可以取得 `car` 的 `speed` 屬性的值。
+
 甚至還可以把 function 也放進去
 
 ```js
@@ -114,13 +123,19 @@ var car = {
 }
 ```
 
-其中 `this` 關鍵字會指到函式被呼叫時 `.` 左邊的物件，像是對上面那個 `car` 物件來說，如果這樣寫
+呼叫函式的方式也很簡單：
 
 ```js
 car.speedUp();
 ```
 
-這時候 `.` 左邊的物件是 `car` ，所以在 `speedUp` 這個函式中的 `this.speed += 100;` 的 `this` 其實就是指到 `car` ，也就是說 `this.speed += 100;` 會等於 `car.speed += 100;`，也就是說 `car.speedUp();` 會讓 `car` 的 `speed` 從 `100` 變成 `200`。
+其中 `this` 關鍵字會指到函式被呼叫時 `.` 左邊的物件，像是對上面的 
+
+```js
+car.speedUp();
+```
+
+來說，這時候 `.` 左邊的物件是 `car` ，所以在 `speedUp` 這個函式中的 `this.speed += 100;` 的 `this` 其實就是指到 `car` ，也就是說 `this.speed += 100;` 會等於 `car.speed += 100;`，也就是說 `car.speedUp();` 會讓 `car` 的 `speed` 從 `100` 變成 `200`。
 
 另外，在前面看過的
 
