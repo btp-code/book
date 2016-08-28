@@ -36,4 +36,4 @@
    * [加上瀏覽人次](BACK_END/first_model.md)
 <!-- * [小心漏洞](be_careful.md) -->
 * [更多](see_more.md)
-
+* [授權](license.md)
