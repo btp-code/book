@@ -95,3 +95,60 @@ for(var i = 0; i < a.length; ++i){
 * [更多...](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
 
+## 字串
+
+字串是另一個常用的物件，他其實跟陣列有幾分像，首先對於字串 `str`
+
+```js
+var str = 'abcdefg';
+```
+
+它也可以像這樣
+
+```js
+str[0];
+```
+
+是 'a'，不過它沒有辦法
+
+```js
+str[0] = 'A';
+```
+
+這樣 str 還是 `"abcdefg"`。
+
+並且它也有 `length` 屬性，至於他的方法，就直接看看 [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) 吧。
+
+
+## 日期物件（Date Object）
+
+首先是先建立一個 Date 物件
+
+```js
+var date = new Date();
+```
+
+* 年：date.getFullYear()
+* 月：date.getMonth()
+* 日：date.getDate()
+* 星期：date.getDay()
+* 時：date.getHours()
+* 分：date.getMinutes() 
+* 秒：date.getSeconds()
+* [More...](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)
+
+## Math 物件
+
+與其說 Math 是一個物件，倒不如說他是一個名稱空間，Javascript 中所有數學的函式都裝在裡面了，例如：
+
+* `Math.random()`：隨機回傳一個在 [0, 1) 的小數。
+* `Math.floor(float)`：把小數 `float` 無條件捨去變成整數。
+* `Math.rounf(float)`：把小數 `float` 四捨五入。
+* `Math.max(x1, x2, ...)`：回傳參數中最大的值。
+* `Math.min(x1, x2, ...)`：回傳參數中最小的值。
+* `Math.pow(x, y)`：回傳 x 的 y 次方。
+* `Math.sqrt(x)`：回傳 x 的平方根。
+* `Math.log(x)`：回傳 ln x （自然對數）。
+* `Math.log10(x)`：回傳以十為底的 log x。
+* `Math.PI`：常數 $\pi$。
+* [More...](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math)
