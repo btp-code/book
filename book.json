@@ -1,4 +1,9 @@
 {
     "root": "src",
-    "plugins": ["mathjax"]
+    "plugins": ["mathjax", "ga"],
+    "pluginsConfig": {
+        "ga": {
+            "token": "UA-83261048-1"
+        }
+    }
 }
