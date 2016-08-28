@@ -26,7 +26,7 @@
 * [簡單的演算法概念](intro_to_algorithm.md)
    * [複雜度的概念](intro_to_complexity.md)
    * [遞迴](intro-to-recursion.md)
-   * [二分搜尋法](binary_search.md)
+   * [分而治之法](divide_and_conquer.md)
    * [蒙地卡羅法求π](monte_carlo.md)
 * [後端的世界](BACK_END/intro_to_backend.md)
    * [Cloud9](BACK_END/intro_to_cloud9.md)
@@ -34,6 +34,6 @@
    * [我的首頁](BACK_END/first_page.md)
    * [再深入一點了解DJANGO與Web framework](BACK_END/more_django.md)
    * [加上瀏覽人次](BACK_END/first_model.md)
-* [小心漏洞](be_careful.md)
+<!-- * [小心漏洞](be_careful.md) -->
 * [更多](see_more.md)
 
