@@ -11,3 +11,5 @@
 $$f(n) = O(n) \rightarrow \text{存在常數} n, c \text{使得} f(n) \leq c \cdot g(n) \forall n \geq N$$
 
 例如：$N^2 + 100000000000000N = O(N^2)$，因為當 $N \geq 1$ 時，$N^2 + 100000000000000N \leq N^2 + 100000000000000N = 100000000000001N$。
+
+
