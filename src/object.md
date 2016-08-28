@@ -79,3 +79,53 @@ check(cars[80]);
 
 假如我們的程式很大，可能有成千上萬個函式，假如我們不考慮「名稱空間」這個概念的話，函式的名稱就很可能衝突了。像是我們前面有了一個 `check` 函式檢查「是不是好車」，那如果我又想寫一個 `check` 函式檢查密碼，名字就重複了。一個解決的方法就是，我們可以宣告一個 `Car` 物件，然後把檢查「車」的 `check` 裝進去變成 `Car` 的一個屬性 `Car.check` ，而另一個檢查密碼則裝到另一個 `Password` 的物件去，變成 `Password.check` ，這樣兩個 `check` 就不會重複名字啦。而以上這些就是「名稱空間」的概念。
 
+## 語法
+
+最簡單建立物件的方式就是這樣了：
+
+```js
+var o = {
+    屬性名字: 值,
+    屬性名字: 值,
+    屬性名字: 值
+};
+```
+
+例如
+
+```js
+var car = {
+    speed: 100,
+    gas: 50,
+    model: "M1 Abrams"
+}
+```
+
+甚至還可以把 function 也放進去
+
+```js
+var car = {
+    speed: 100,
+    gas: 50,
+    model: "M1 Abrams",
+    speedUp: function(){ 
+        this.speed += 100;
+    }
+}
+```
+
+其中 `this` 關鍵字會指到函式被呼叫時 `.` 左邊的物件，像是對上面那個 `car` 物件來說，如果這樣寫
+
+```js
+car.speedUp();
+```
+
+這時候 `.` 左邊的物件是 `car` ，所以在 `speedUp` 這個函式中的 `this.speed += 100;` 的 `this` 其實就是指到 `car` ，也就是說 `this.speed += 100;` 會等於 `car.speed += 100;`，也就是說 `car.speedUp();` 會讓 `car` 的 `speed` 從 `100` 變成 `200`。
+
+另外，在前面看過的
+
+```js
+var d = new Date();
+```
+
+這個 `new XXX();` 語法，其實也是在「建立」一個物件。像上面那一行是建立一個內建、別人寫好的 `Date` 物件，通常用這種方式「建立」的物件會在建立時做一些事，像是 `new Date()` 可能在建立時會想辦法把系統的時間存到物件裡，至於如果我們要如何寫一個以這種方式建立的物件，這裡就不多說了，想知道更多請看[MDN](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Guide/Working_with_Objects)。
